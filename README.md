@@ -21,8 +21,8 @@ services:
       TZ: 'Asia/Dhaka'
       WEBPASSWORD: 'PASSWORD' # change password
     volumes:
-      - '/home/sazid/pihole/etc-pihole:/etc/pihole'
-      - '/home/sazid/pihole/etc-dnsmasq.d:/etc/dnsmasq.d'
+      - '/home/username/pihole/etc-pihole:/etc/pihole'  # insert your docker host username
+      - '/home/username/pihole/etc-dnsmasq.d:/etc/dnsmasq.d' # insert your docker host username
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
